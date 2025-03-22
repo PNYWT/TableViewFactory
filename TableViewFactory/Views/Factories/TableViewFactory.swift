@@ -19,6 +19,20 @@ class TableViewFactory {
         return tableView
     }
     
+    static func createTableView(
+        for style: UITableView.Style,
+        separatorStyle: UITableViewCell.SeparatorStyle,
+        cellTypes: [UITableViewCell.Type]
+    ) -> UITableView {
+        let tableView = UITableView(frame: .zero, style: style)
+        tableView.separatorStyle = separatorStyle
+        for cellType in cellTypes {
+            let identifier = String(describing: cellType)
+            tableView.register(cellType, forCellReuseIdentifier: identifier)
+        }
+        return tableView
+    }
+    
     static func createViewCell<Cell: UITableViewCell>(for tableView: UITableView, cellType: Cell.Type, indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: cellType), for: indexPath)
         cell.selectionStyle = .none

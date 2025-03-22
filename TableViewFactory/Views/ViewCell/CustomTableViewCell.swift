@@ -52,7 +52,7 @@ class CustomTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(with item: Item, indexPath: IndexPath, delegate: CustomTableViewCellDelegate) {
+    func configure(with item: CellModel, indexPath: IndexPath, delegate: CustomTableViewCellDelegate?) {
         self.indexPath = indexPath
         self.delegate = delegate
         nameLabel.text = item.nameItem

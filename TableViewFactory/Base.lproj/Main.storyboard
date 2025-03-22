@@ -17,12 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smu-rP-ksy">
-                                <rect key="frame" x="141" y="406" width="111" height="41"/>
+                                <rect key="frame" x="141" y="358" width="111" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ExampleVC"/>
                                 <connections>
                                     <segue destination="kR1-WK-gfF" kind="show" id="QXY-5b-Wry"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47c-d8-cCr">
+                                <rect key="frame" x="110" y="430" width="173" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="DiffableDataSource"/>
+                                <connections>
+                                    <segue destination="O5F-Av-10H" kind="show" id="4aT-2p-qGH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,6 +59,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ot-Kj-Rhb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2098" y="-2"/>
+        </scene>
+        <!--Example Diffable Data SourceVC-->
+        <scene sceneID="KIT-ao-ziS">
+            <objects>
+                <viewController id="O5F-Av-10H" customClass="ExampleDiffableDataSourceVC" customModule="TableViewFactory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ZS-39-Msq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Boc-sU-zHF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Q51-8n-u02"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpK-0H-mMa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1934" y="720"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bxf-Zg-L6f">

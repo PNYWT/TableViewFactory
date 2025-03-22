@@ -26,7 +26,7 @@ struct Section {
     var item: [Item]
 }
 
-struct Item {
+struct Item: CellModel {
     let nameItem: String
 }
 
